@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.cta1{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  position: relative;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #212534;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.cta1 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  position: relative;
+}
+.cta1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(100% + 4px));
+  width: 45px;
+  height: 45px;
+  background: #dc143c;
+  border-radius: 50px;
+  transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+  z-index: -1;
+}
+.cta1:hover::before {
+  width: 100%;
+  transform: translateY(-50%) translateX(-18px);
+  transition: transform .25s cubic-bezier(0, 0, .5, 2), width .25s .25s cubic-bezier(0, 0, .5, 2);
+}
+.cta1 i {
+  margin-left: 5px;
+  transition: transform .25s .4s cubic-bezier(0, 0, .5, 2);
+}
+.cta1:hover i {
+  transform: translateX(3px);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body {
+  font-family: "Poppins", sans-serif;
+  background-color: #343440;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+ a {
+  text-decoration: none;
+}
+input {
+  display: none;
+}
+ label {
+  position: relative;
+  top: -70px;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+ 
+}
+ label::before,
+label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+ label::before {
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #7efefd;
+}
+label::after {
+  opacity: 0;
+  left: -7px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #7efefd;
+}
+input:checked~label::after {
+  opacity: 1;
+  animation: scaleInOut .25s;
+}
+ @keyframes scaleInOut {
+  0% {
+    transform: translateY(-50%) scale(1.5);
+  }
+50% {
+    transform: translateY(-50%) scale(0.5);
+  }
+ 100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+.haz{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    
+
+}
+.option{
+  
+
+}

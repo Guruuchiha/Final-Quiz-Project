@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+
+}
+html,body{
+  display: grid;
+  height: 100%;
+}
+.text{  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 115px;
+  font-weight: 800;
+  outline: none;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 65%, #eef3d2 85%, #5335cf 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  to{
+    background-position: 400%;
+  }
+}
+body{
+    background: black;
+    text-align: center;
+position: relative;
+top: 20px;
+}
+#gur{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+  font-weight: 800;
+  outline: none;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 65%, #eef3d2 85%, #5335cf 100%);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: animate 10s linear infinite;
+  position: relative;
+  top: -70px;
+
+}
+
+#nath{
+
+    position: relative;
+    right: 0%;
+    width: 20px;
+    height: 14px;
+          text-decoration: none;
+          padding: 30px 50px;
+          color: #eef3d2;
+          border: 1px solid#eef3d2;
+          overflow: hidden;
+          position: relative;
+          top: -50px;
+          transition: color .5s .25s;
+         font-weight: bolder;
+         font-size: x-large;
+
+         
+}
+#nath::before,
+#nath::after{
+          content: '';
+          position: absolute;
+          top: 0;width: 50%;height: 100%;
+          background-color: #eef3d2;
+          z-index: -1;
+          transform:scaleX(0) ;
+          transition: transform .5s
+          cubic-bezier(.785, .135, .15, .86);
+      }
+      #nath::before{
+          left: 0;
+          transform-origin: left;
+          background-color:  #eef3d2;
+      }
+      #nath::after{
+          right: 0;
+          transform-origin: right;
+      }
+      #nath:hover::before,
+      #nath:hover::after{
+        transform: scaleX(1);
+        font-weight: bolder;
+      }
+      #nath:hover{
+          color: #c820ee;
+          transition-delay:  .5S;
+         
+      }
